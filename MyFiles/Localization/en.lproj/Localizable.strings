@@ -1,0 +1,3 @@
+"emailLbl" = "Enter your Email to recieve OTP code to reset password";
+"otpverify" = "Enter the code sent to your email";
+"OTPalert" = "Enter sent OTP to continue";
