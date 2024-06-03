@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TollsCell: UICollectionViewCell {
+class DownloadTypeCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
