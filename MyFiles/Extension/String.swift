@@ -74,3 +74,13 @@ extension String {
         return self.applyingTransform(StringTransform.toLatin, reverse: false) ?? self
     }
 }
+
+//yyyy-MM-dd'T'HH:mm:ssZ
+
+extension Date{
+    func getStrFromDatae() -> String{
+        let dateform = DateFormatter()
+        dateform.dateFormat = "dd/MM/yyyy"
+        return dateform.string(from: self)
+    }
+}

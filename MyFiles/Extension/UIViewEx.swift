@@ -13,8 +13,11 @@ extension UIView{
         self.layer.borderWidth = width
         self.layer.borderColor = color.cgColor
     }
-    func applyCornerRadius(radius: CGFloat){
+    func applyCornerRadius(radius: CGFloat, all: Bool = true){
         self.layer.cornerRadius = radius
+        if !all{
+            self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
+        }
     }
     func removeBorder(){
         self.layer.borderWidth = 0

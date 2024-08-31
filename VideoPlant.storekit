@@ -1,0 +1,110 @@
+{
+  "identifier" : "090F718F",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "SAU",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "526E78C1",
+      "localizations" : [
+
+      ],
+      "name" : "Ads Subscription",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "12.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "E5B4B260",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "1AC18BB3",
+            "paymentMode" : "none"
+          },
+          "localizations" : [
+            {
+              "description" : "Monthly subscription for no Ads",
+              "displayName" : "Ads free Monthly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "اشتراك شهري بدون اعلانات",
+              "displayName" : "لا إعلانات - خالي من الاعلانات",
+              "locale" : "ar"
+            }
+          ],
+          "productID" : "123456",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "NO ADS - Monthly",
+          "subscriptionGroupID" : "526E78C1",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

@@ -9,15 +9,15 @@ import UIKit
 
 class Downloadcell: UITableViewCell {
 
+    @IBOutlet weak var conView: UIView!
+    @IBOutlet weak var namelbl: UILabel!
+    @IBOutlet weak var sizelbl: UILabel!
+    @IBOutlet weak var datelbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        conView.applyCornerRadius(radius: 8)
+        conView.applyBorder(width: 0.4, color: .systemGray5)
     }
     
 }

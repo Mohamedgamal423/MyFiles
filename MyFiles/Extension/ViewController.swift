@@ -7,6 +7,7 @@
 
 import Alamofire
 import UIKit
+import Lottie
 
 extension UIViewController{
     func isUpdateAvailableOrNot(completion: @escaping(_ available: Bool) ->()){
@@ -31,7 +32,7 @@ extension UIViewController{
     }
     func presentVC<T: UIViewController>(vc: T, id: String){
         let vc = storyboard?.instantiateViewController(withIdentifier: id) as! T
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true)
     }
     func setBackButton(){
         let leftitem = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .plain, target: self, action: #selector(Resback_btn))
@@ -40,5 +41,29 @@ extension UIViewController{
     }
     @objc func Resback_btn(){
         navigationController?.popViewController(animated: true)
+    }
+    func addAnimation() -> LottieAnimationView{
+        var animationView = LottieAnimationView(name: "loading")
+        animationView.frame = self.view.bounds
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 0.5
+        self.view.addSubview(animationView)
+        return animationView
+    }
+    public func addActionSheetForiPad(actionSheet: UIAlertController) {
+       if let popoverPresentationController = actionSheet.popoverPresentationController {
+         popoverPresentationController.sourceView = self.view
+         popoverPresentationController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+         popoverPresentationController.permittedArrowDirections = []
+       }
+     }
+    
+}
+
+extension UIViewController: UIPopoverPresentationControllerDelegate {
+
+    public func prepareForPopoverPresentation(_ popoverPresentationController: UIPopoverPresentationController) {
+        popoverPresentationController.sourceView = self.view
     }
 }

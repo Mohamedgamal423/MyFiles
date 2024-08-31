@@ -17,7 +17,7 @@ class ResProfcell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        cont_view.applyShadow(colorhex: "#000000", radius: 4, opacity: 0.3, offset: CGSize(width: 5, height: 7))
+        cont_view.applyShadow(colorhex: "#000000", radius: 4, opacity: 0.3, offset: CGSize(width: 4, height: 7))
         cont_view.applyCornerRadius(radius: 4)
     }
     func config(model: ResProfileData){

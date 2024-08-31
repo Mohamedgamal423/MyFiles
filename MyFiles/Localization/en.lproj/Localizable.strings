@@ -1,3 +1,3 @@
-"emailLbl" = "Enter your Email to recieve OTP code to reset password";
-"otpverify" = "Enter the code sent to your email";
-"OTPalert" = "Enter sent OTP to continue";
+
+"video speed" = "Choose Video Speed";
+"speedhint" = "Please choose the required video speed. The number (1.0) symbolizes the normal speed of the video. The higher the number, the higher the speed, and vice versa.";
